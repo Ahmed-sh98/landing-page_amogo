@@ -1,0 +1,374 @@
+:root {
+  --primary-color: #ff4b57;
+  --secondary-color: #393c58;
+  --third-color: hsl(232, 20%, 21%);
+  --forth-color: #8f6480;
+}
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Baskervville", serif;
+  color: linen;
+  background-color: #23253a;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 3.5rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: linen;
+}
+.container {
+  width: 100%;
+  max-width: 111rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 3fr;
+  align-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li {
+  list-style-type: none;
+}
+.btn:hover {
+  background: #671c30;
+  cursor: pointer;
+}
+/* nav */
+nav {
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+
+  background: #1f1f1f;
+  color: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  animation: slideDown 1s ease-in-out;
+}
+/*  */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.color-span {
+  color: var(--primary-color);
+}
+#listItem {
+  list-style: none;
+  display: flex;
+}
+
+#listItem li {
+  margin: 0 1.5rem;
+}
+
+#listItem a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#listItem a:hover {
+  color: #f0a500;
+}
+
+.nav-link.active {
+  color: #f0a500;
+}
+
+#bar {
+  display: none;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+/* Hero Section */
+.hero {
+  height: 95vh;
+  max-height: 1000px;
+  display: grid;
+  margin: 2rem 0;
+}
+.hero .container {
+  display: grid;
+  grid-template-columns: 3fr;
+  align-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  animation: slideDown 1s ease-in-out;
+}
+.btn {
+  width: 150px;
+  padding: 12px;
+  border: 0;
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.hero .container .header h1 {
+  font-size: 4rem;
+}
+.hero .container .header p {
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: var(--third-color);
+  width: 50%;
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.container .timeline .circle {
+  background: var(--primary-color);
+}
+.container .timeline .circle2 {
+  border: 1px solid var(--forth-color);
+  background: transparent;
+}
+.container .timeline .circle3 {
+  border: 1px solid var(--forth-color);
+}
+.container .timeline .hr {
+  width: 2px;
+  height: 40px;
+  border: 1px solid var(--forth-color);
+  margin: auto;
+}
+
+/* Services */
+#services .container {
+}
+#services .container .header p {
+  font-size: 1.6rem;
+}
+#services .container .header h2 {
+  font-size: 3.6rem;
+  color: var(--primary-color);
+}
+#services .container .header h2 > span {
+  display: inline-block;
+  margin: 10px 0;
+  border-bottom: 4px solid var(--primary-color);
+}
+#services .container .timeline {
+  margin: auto;
+}
+#services .container .timeline .circle:nth-child(1) {
+  margin: auto;
+  border: 1px solid var(--forth-color);
+  background: transparent;
+}
+#services .container .timeline .circle:nth-child(5) {
+  margin: auto;
+  border: 1px solid var(--forth-color);
+  background: transparent;
+}
+#services .container .timeline .circle {
+  background: var(--primary-color);
+  margin: auto;
+}
+#services .container .timeline .circle2 {
+  margin: auto;
+}
+#services .container .boxs .flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: 1.5rem 0;
+}
+#services .container .boxs .flex-box .box {
+  width: 30rem;
+  height: 30rem;
+  background: #2b2e41;
+}
+#services .container .boxs .flex-box .box:hover {
+  background: #671c30;
+  cursor: pointer;
+  scale: 1.1;
+  transition: 0.5s;
+}
+#services .container .boxs .flex-box .box i {
+  color: var(--primary-color);
+}
+
+#services .container .boxs .flex-box .box .content-box {
+  padding: 20px;
+}
+.boxs .flex-box .box .content-box i {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+.boxs .flex-box .box .content-box p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+ 
+/* services animation */
+/* Contact */
+
+#contact .container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rem auto;
+  align-items: center;
+}
+#contact .container .content-contact .header h4 {
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+#contact .container form {
+  display: block;
+  width: 100%;
+}
+#contact .container form input {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: transparent;
+  border: 1px solid var(--forth-color);
+}
+#contact .container form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background: transparent;
+}
+
+#contact .container .timeline .circle:nth-child(1) {
+  margin: auto;
+  border: 1px solid var(--forth-color);
+  background: transparent;
+}
+#contact .container .timeline .circle:nth-child(3) {
+  margin: auto;
+  border: 1px solid var(--forth-color);
+  background: transparent;
+}
+#contact .container .timeline .circle:nth-child(6) {
+  margin: auto;
+  border: 1px solid var(--forth-color);
+  background: transparent;
+}
+#contact .container .timeline .circle {
+  background: var(--primary-color);
+  margin: auto;
+}
+#services .container .timeline .circle2 {
+  margin: auto;
+}
+
+/*  */
+/* media  */
+@media only screen and (max-width: 768px) {
+  #bar {
+    display: block;
+  }
+
+  #listItem {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #333;
+    padding: 10px;
+    width: 200px;
+  }
+
+  #listItem.show {
+    display: flex;
+  }
+
+  #listItem li {
+    margin: 10px 0;
+  }
+ 
+  /*  */
+  #services .container .boxs .flex-box .box{
+    
+    width: 90%;
+    height: 100%;
+    margin: 1rem 0;
+  }
+  #contact .container form{
+    width: 90%;
+    height: 100%;
+    margin: 1rem 0;
+  }
+}
+/* Keyframes for animations */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
